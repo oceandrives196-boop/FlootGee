@@ -12,15 +12,12 @@
   --floot-light:#6B2A8C;
   --floot-glow:#8B3DFF;
 }
-
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;}
-
 body{
   background:#0F031A;
   color:#fff;
   overflow-x:hidden;
 }
-
 .bg-animation{
   position:fixed;
   top:0;left:0;
@@ -31,14 +28,11 @@ body{
              #0F031A;
   animation:bgPulse 8s ease-in-out infinite;
 }
-
 @keyframes bgPulse{
   0%,100%{opacity:1}
   50%{opacity:.8}
 }
-
 .container{max-width:480px;margin:auto;padding:20px;position:relative;z-index:1;}
-
 .hero{
   margin-top:10px;
   background:rgba(255,255,255,.06);
@@ -49,7 +43,6 @@ body{
   border:1px solid rgba(255,255,255,.1);
   box-shadow:0 20px 60px rgba(74,13,102,.4);
 }
-
 .hero h1{
   font-size:42px;
   font-weight:900;
@@ -59,28 +52,24 @@ body{
   -webkit-text-fill-color:transparent;
   background-clip:text;
 }
-
 .hero p{
   color:rgba(255,255,255,.7);
   line-height:1.7;
   margin-bottom:30px;
   font-size:15px;
 }
-
 .stats{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:12px;
   margin-bottom:30px;
 }
-
 .stat{
   background:rgba(255,255,255,.05);
   padding:15px 10px;
   border-radius:16px;
   border:1px solid rgba(255,255,255,.1);
 }
-
 .stat-num{
   font-size:24px;
   font-weight:800;
@@ -88,14 +77,12 @@ body{
   display:block;
   margin-bottom:4px;
 }
-
 .stat-label{
   font-size:11px;
   color:rgba(255,255,255,.6);
   text-transform:uppercase;
   letter-spacing:.5px;
 }
-
 .btn{
   display:block;
   text-decoration:none;
@@ -108,7 +95,6 @@ body{
   position:relative;
   overflow:hidden;
 }
-
 .whats-btn{
   background:rgba(139,61,255,.15);
   color:#fff;
@@ -116,7 +102,6 @@ body{
   margin-bottom:12px;
 }
 .whats-btn:hover{background:rgba(139,61,255,.25);transform:translateY(-2px);}
-
 .whats-btn::after{
   content:'?';
   position:absolute;
@@ -127,15 +112,12 @@ body{
   font-weight:900;
   color:var(--floot-glow);
 }
-
 .signup{
   background:linear-gradient(135deg,var(--floot),var(--floot-glow));
   color:#fff;
   box-shadow:0 10px 30px rgba(139,61,255,.4);
 }
-
 .signup:hover{transform:translateY(-2px);box-shadow:0 15px 40px rgba(139,61,255,.6);}
-
 .signup::after{
   content:'→';
   position:absolute;
@@ -145,16 +127,13 @@ body{
   font-size:20px;
   transition:.3s;
 }
-
 .signup:hover::after{right:15px;}
-
 .login{
   background:rgba(255,255,255,.08);
   color:#fff;
   border:2px solid rgba(255,255,255,.2);
 }
 .login:hover{background:rgba(255,255,255,.12);border-color:var(--floot-glow);}
-
 .feedback-section{
   margin-top:25px;
   background:rgba(255,255,255,.04);
@@ -163,7 +142,6 @@ body{
   padding:25px;
   border:1px solid rgba(255,255,255,.1);
 }
-
 .section-title{
   font-size:16px;
   font-weight:700;
@@ -172,36 +150,29 @@ body{
   align-items:center;
   gap:10px;
 }
-
 .section-title::before{
   content:'💬';
   font-size:20px;
 }
-
 .review-carousel{
   position:relative;
   min-height:140px;
 }
-
 .review{
   display:none;
   animation:fadeIn.5s;
 }
-
 .review.active{display:block;}
-
 @keyframes fadeIn{
   from{opacity:0;transform:translateY(10px)}
   to{opacity:1;transform:translateY(0)}
 }
-
 .review-header{
   display:flex;
   align-items:center;
   gap:12px;
   margin-bottom:12px;
 }
-
 .avatar{
   width:45px;
   height:45px;
@@ -213,24 +184,20 @@ body{
   font-weight:700;
   font-size:18px;
 }
-
 .reviewer-info h4{
   font-size:15px;
   margin-bottom:2px;
 }
-
 .reviewer-info span{
   font-size:11px;
   color:rgba(255,255,255,.5);
 }
-
 .review-text{
   font-size:14px;
   line-height:1.6;
   color:rgba(255,255,255,.85);
   margin-bottom:12px;
 }
-
 .review-amount{
   display:inline-block;
   background:rgba(139,61,255,.2);
@@ -240,14 +207,12 @@ body{
   font-weight:700;
   color:var(--floot-glow);
 }
-
 .carousel-dots{
   display:flex;
   justify-content:center;
   gap:6px;
   margin-top:15px;
 }
-
 .dot{
   width:6px;
   height:6px;
@@ -255,13 +220,11 @@ body{
   background:rgba(255,255,255,.2);
   transition:.3s;
 }
-
 .dot.active{
   background:var(--floot-glow);
   width:20px;
   border-radius:4px;
 }
-
 .top-earners{
   margin-top:20px;
   background:rgba(255,255,255,.04);
@@ -270,13 +233,11 @@ body{
   padding:25px;
   border:1px solid rgba(255,255,255,.1);
 }
-
 .earner-list{
   display:flex;
   flex-direction:column;
   gap:12px;
 }
-
 .earner{
   display:flex;
   align-items:center;
@@ -286,7 +247,6 @@ body{
   border-radius:14px;
   border:1px solid rgba(255,255,255,.08);
 }
-
 .earner-rank{
   width:28px;
   height:28px;
@@ -299,30 +259,25 @@ body{
   font-weight:800;
   margin-right:12px;
 }
-
 .earner-info{
   flex:1;
   display:flex;
   align-items:center;
 }
-
 .earner-name{
   font-size:15px;
   font-weight:600;
 }
-
 .earner-amount{
   font-size:16px;
   font-weight:800;
   color:var(--floot-glow);
 }
-
 .earner:first-child{
   background:linear-gradient(135deg,rgba(139,61,255,.2),rgba(74,13,102,.2));
   border-color:var(--floot-glow);
   box-shadow:0 0 20px rgba(139,61,255,.3);
 }
-
 .promo{
   margin-top:25px;
   background:linear-gradient(135deg,var(--floot),var(--floot-light));
@@ -331,7 +286,6 @@ body{
   text-align:center;
   box-shadow:0 20px 60px rgba(74,13,102,.5);
 }
-
 .badge{
   display:inline-block;
   background:#fff;
@@ -343,7 +297,6 @@ body{
   margin-bottom:18px;
   letter-spacing:.5px;
 }
-
 .promo h2{margin-bottom:15px;font-size:26px;font-weight:800;}
 .reward{
   font-size:52px;
@@ -351,9 +304,7 @@ body{
   margin-bottom:15px;
   text-shadow:0 0 30px rgba(255,255,255,.5);
 }
-
 .promo p{line-height:1.8;opacity:.95;font-size:15px;}
-
 .countdown{
   margin-top:25px;
   background:rgba(0,0,0,.3);
@@ -361,10 +312,8 @@ body{
   padding:20px;
   border:1px solid rgba(255,255,255,.1);
 }
-
 .countdown h3{margin-bottom:12px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;opacity:.8;}
 #timer{font-size:32px;font-weight:900;letter-spacing:2px;}
-
 .footer{
   text-align:center;
   padding:30px 0 15px 0;
@@ -381,7 +330,7 @@ body{
   <div class="hero">
     <h1>FlootGee</h1>
     <p>Join 10,000+ Nigerians earning daily. Your hustle, upgraded.</p>
-    
+
     <div class="stats">
       <div class="stat">
         <span class="stat-num">10K+</span>
@@ -396,8 +345,8 @@ body{
         <span class="stat-label">Commission</span>
       </div>
     </div>
-    
-    <a class="btn whats-btn" href="https://oceandrives196-boop.github.io/What-s-flootGee/" target="_blank" rel="noopener noreferrer">What's FlootGee</a>
+
+    <a class="btn whats-btn" href="https://geeinfo.floot.com.ng" target="_blank" rel="noopener noreferrer">What's FlootGee</a>
     <a class="btn signup" href="https://affiliates.ginjabet.com/visit/?bta=35439&brand=ginjabetaffiliates" target="_blank" rel="noopener noreferrer">Create Account</a>
     <a class="btn login" href="https://affiliates.ginjabet.com" target="_blank" rel="noopener noreferrer">Member Login</a>
   </div>
@@ -412,24 +361,23 @@ body{
     <div class="section-title">🔥 Top Earners Today</div>
     <div class="earner-list" id="earnerList"></div>
   </div>
-  
+
   <div class="promo">
     <div class="badge">🔥 JULY EXCLUSIVE</div>
     <h2>Claim ₦5,000 Instant Bonus</h2>
     <div class="reward">₦5,000</div>
     <p>Get <strong>20 new players</strong> this month and unlock your <strong>₦5,000 cash bonus</strong>. No caps. No stress.</p>
-    
+
     <div class="countdown">
       <h3>Promo Ends In</h3>
       <div id="timer">Loading...</div>
     </div>
   </div>
-  
+
   <div class="footer">Powered by <strong>Floot x Ginjabet</strong></div>
 </div>
 
 <script>
-// 30 JUNE REVIEWS
 const reviews = [
   {name:"Chinedu Okafor",amount:"₦187,500",text:"FlootGee changed my life. From ₦0 to ₦187k in June alone. My rent is sorted!",initial:"C"},
   {name:"Aisha Mohammed",amount:"₦45,200",text:"First time earning online and it's real! Made ₦45k my first month. Thank you FlootGee!",initial:"A"},
@@ -462,17 +410,13 @@ const reviews = [
   {name:"Peter Adeyemi",amount:"₦221,600",text:"₦221k in June! Bought land in my village. FlootGee is not play, it's serious business!",initial:"P"},
   {name:"Halima Ibrahim",amount:"₦17,400",text:"₦17k may be small but it paid my NEPA bill and food. I'm grateful to Allah for FlootGee.",initial:"H"}
 ];
-
-// RANDOMIZE REVIEWS
 let reviewOrder = [];
 function shuffleReviews(){
   reviewOrder = [...Array(reviews.length).keys()].sort(()=>Math.random()-0.5);
 }
-
 function renderReviews(){
   const reviewContainer = document.getElementById('reviews');
   const dotsContainer = document.getElementById('dots');
-  
   reviews.forEach((review,i)=>{
     const div = document.createElement('div');
     div.className = 'review';
@@ -488,15 +432,12 @@ function renderReviews(){
       <div class="review-amount">Earned: ${review.amount}</div>
     `;
     reviewContainer.appendChild(div);
-
     const dot = document.createElement('div');
     dot.className = 'dot';
     dotsContainer.appendChild(dot);
   });
-  
   showReview(0);
 }
-
 let currentReview = 0;
 function showReview(index){
   const allReviews = document.querySelectorAll('.review');
@@ -506,25 +447,19 @@ function showReview(index){
   allReviews[reviewOrder[index]].classList.add('active');
   allDots[reviewOrder[index]].classList.add('active');
 }
-
 function nextReview(){
   currentReview = (currentReview + 1) % reviews.length;
   showReview(currentReview);
 }
-
-// TOP EARNERS - DAILY CHANGE
 function getTopEarners(){
-  const seed = Math.floor(Date.now() / 86400000); // Changes daily
+  const seed = Math.floor(Date.now() / 86400000);
   const names = ['Adams','James','Adamu','Chinedu','Blessing','David','Ruth','Peter','Mercy','Chidi','Grace','Emeka'];
-  
   const earners = names.map((name,i)=>{
     const base = 60000 + ((seed * (i+1) * 7919) % 280000);
     return {name, amount: base};
   }).sort((a,b)=>b.amount-a.amount).slice(0,3);
-  
   return earners;
 }
-
 function renderTopEarners(){
   const earners = getTopEarners();
   const list = document.getElementById('earnerList');
@@ -538,27 +473,21 @@ function renderTopEarners(){
     </div>
   `).join('');
 }
-
-// COUNTDOWN
 function countdown(){
   let now = new Date();
   let year = now.getFullYear();
   let end = new Date(year, 6, 31, 23, 59, 59);
   let distance = end - now;
-  
   if(distance < 0){
     document.getElementById("timer").innerHTML = "Promo ended";
     return;
   }
-
   let d=Math.floor(distance/(1000*60*60*24));
   let h=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
   let m=Math.floor((distance%(1000*60*60))/(1000*60));
   let s=Math.floor((distance%(1000*60))/1000);
   document.getElementById("timer").innerHTML=d+"d : "+h+"h : "+m+"m : "+s+"s";
 }
-
-// INIT
 shuffleReviews();
 renderReviews();
 renderTopEarners();
